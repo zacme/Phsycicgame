@@ -12,6 +12,22 @@
 
 <div id = "game">
 <p>Press any key to continue</p>
+<script type = "text/javascript">
+//have users input a variable of A-Z in website
+document.onkeyup = function(event) {
+    //keys A-Z will be entered
+    var userGuess = event.key 
+
+//create an array with possible choices
+var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+//Choose a choice from the array
+var computerguess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+}
+
+
+
+</script>
 </div>
 </body>
 </html>
