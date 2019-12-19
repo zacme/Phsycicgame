@@ -16,14 +16,30 @@
 //have users input a variable of A-Z in website
 document.onkeyup = function(event) {
     //keys A-Z will be entered
-    var userGuess = event.key 
-
-//create an array with possible choices
-var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-//Choose a choice from the array
-var computerguess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-
+    var userGuess = event.key;
+    //value has to be a-z
+    var regexp = /[a-z]/gi;
+    if (!regexp.test(userChoice)) {
+      alert("please enter a letter");
+} else {
+    console.log(userGuess);
 }
+//create an array with possible choices
+
+var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+//Set computer to choose a choice from the array
+
+var randomguess = [Math.floor(Math.random() * alphabet.length)];
+var computerChoice = alphabet[randomguess];
+
+console.log(computerChoice);
+
+// 
+
+
+
+
 
 
 
